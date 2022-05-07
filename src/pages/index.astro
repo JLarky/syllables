@@ -1,0 +1,35 @@
+---
+import { Syllables } from '../components/Syllables';
+import { getRandomWord } from "../utils/syllables";
+const word1 = getRandomWord();
+const word2 = getRandomWord();
+const word3 = getRandomWord();
+const word4 = getRandomWord();
+---
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<style>
+			html,
+			body {
+				font-family: system-ui;
+				margin: 0;
+			}
+			body {
+				padding: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Слоги</h1>
+			<Syllables client:idle initialState={word1} />
+			<Syllables client:idle initialState={word2} />
+			<Syllables client:idle initialState={word3} />
+			<Syllables client:idle initialState={word4} />
+		</main>
+	</body>
+</html>

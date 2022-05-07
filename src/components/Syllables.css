@@ -1,0 +1,26 @@
+.syllables button {
+  background-color: rgb(245, 255, 158);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: inherit;
+  margin-right: 1rem;
+}
+.syllables.correct button {
+  background-color: rgb(154, 253, 134);
+}
+.sound {
+  position: relative;
+}
+.sound > div {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  cursor: pointer;
+}
+.sound > div:first-child {
+  right: 20px;
+}
+.syllables {
+  font-size: 3em;
+  margin: 4rem;
+}

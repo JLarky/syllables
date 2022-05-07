@@ -1,1 +1,4 @@
-TEST
+Syllables
+
+    pnpm install
+    pnpm start
